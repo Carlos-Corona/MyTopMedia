@@ -12,9 +12,14 @@ The project consists of two main folders:
 
 ## Preview
 
-Here's a sneak peek of the attractive and visually appealing frontend design of MyTopMedia:
 
-![Frontend Preview](frontend-preview.png)
+### Preview 1
+
+![Frontend Preview](./frontend-preview.png)
+
+### Preview 2
+
+![Frontend Preview](./frontend-preview2.png)
 
 ## Getting Started
 
@@ -32,8 +37,6 @@ To get started with MyTopMedia, please follow these steps:
    ```
    http://localhost:3000
    ```
-
-   Voila! You are now ready to explore and interact with MyTopMedia.
 
 ## Technologies Used
 
