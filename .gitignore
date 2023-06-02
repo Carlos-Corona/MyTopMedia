@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+packages/*/node_modules/
+
+# Environment variables
+.env
+
+# Build artifacts
+build/
+dist/
+out/
+
+# Testing
+coverage/
+
+# IDE specific files
+.vscode/
+.idea/
+*.iml
+
+# Operating System files
+Thumbs.db
+.DS_Store
+
+# Compiled binary files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Miscellaneous
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+
+# Editor and IDE specific files
+*.swp
+*~

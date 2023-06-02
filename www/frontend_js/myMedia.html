@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Buscador de Películas y Series</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="content">
+        <div class="sub_media">
+          <div class="nav_wrapper">
+            <a href="#" class="logo">AllTimeFavs</a>
+            <a href="./myMedia.html" class="my_media">Mis Favoritos</a>
+            <a
+              href="./tmdbSearch.html"
+              class="movies_search"
+              data-media-type="Pelicula"
+              >Buscar Películas</a
+            >
+            <a
+              href="./tmdbSearch.html"
+              class="series_search"
+              data-media-type="Serie"
+              >Buscar Series</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="inner_content new_index_common new_index_movies">
+      <div class="content_wrapper wrap">
+        <div class="title">
+          <h1>Bienvenido al maravilloso mundo del cine</h1>
+          <h3>Tus peliculas y series favoritas en un solo lugar</h3>
+          <img
+            src="./powered_by.png"
+            alt="Logo del centro de búsqueda"
+            width="160"
+            height="55"
+          />
+        </div>
+        <div class="search-nav">
+          <form id="form" style="margin: auto; max-width: 500px">
+            <label for="search" class="hidden"
+              >Buscar películas y TV Shows:</label
+            >
+            <input
+              type="text"
+              placeholder="Peliculas, TV Shows..."
+              id="search"
+              class="search"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <main id="main" class="main">
+      <!-- Agregar aquí el contenido dinámico, como películas y series -->
+    </main>
+    <script src="./my_media.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  </body>
+</html>

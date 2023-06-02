@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Movie Searcher</title>
+  </head>
+
+  <body style="background-image: url(./blockbuster.jpg)">
+    <header>
+      <nav class="content">
+        <div class="sub_media">
+          <div class="nav_wrapper">
+            <a href="#" class="logo">Mis Favoritos de Todos los Tiempos</a>
+            <a href="./myMedia.html" class="my_media">Mis Favoritos</a>
+            <a href="./tmdbSearch.html" class="movies_search" data-media-type="Pelicula">Buscar Películas</a>
+            <a href="./tmdbSearch.html" class="series_search" data-media-type="Serie">Buscar Series</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main id="main">
+        <div class="container" id="form">
+            <form id="contact">
+              <h3> Pelicula XYZ</h3>
+              <h4> Formulario de Actualizacion/Modificacion</h4>
+              <fieldset>
+                <label> ID </label>
+                <input readonly placeholder="0000001"  type="text" tabindex="1">
+              </fieldset>
+              <fieldset>
+                <label> Titulo </label>
+                <input placeholder="" type="text" tabindex="2" autofocus>
+              </fieldset>
+              <fieldset>
+                <label> Calificacion (Ejemplo: 6.6)*</label>
+                <input placeholder="" type="tel" tabindex="3" id="">
+              </fieldset>
+              <fieldset>
+                <label> Fecha de estreno (formato yyyy-mm-dd)* </label>
+                <input placeholder="" type="tel" tabindex="3" id="">
+              </fieldset>
+              <fieldset>
+                <label> Imagen URL (1080x1050)*</label>
+                <input placeholder="" type="url" tabindex="4" >
+              </fieldset>
+              <fieldset>
+                <label> Descripcion </label>
+                <textarea placeholder="" tabindex="5"></textarea>
+              </fieldset>
+              <fieldset>
+                <label> Tipo </label>
+                <input placeholder="" type="tel" tabindex="3" id="">
+              </fieldset>
+              <fieldset>
+                <button type="submit" > Guardar </button>
+              </fieldset>
+              <p> * Si no se cumplen con las caracteristicas no se mostraran los datos de forma correcta</p>
+            </form>
+          </div>
+        </div>
+    </main>
+    <script src="./update.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  </body>
+  
+</html>

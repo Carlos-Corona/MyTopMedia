@@ -1,0 +1,219 @@
+.App {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  --primary-color: #1565c0;
+  --secondary-color: #003c8f;
+  --alternative-color: #6ec6ff;
+}
+/* Body Section */
+body {
+  font-family: "Poppins", "sans-serif";
+  margin: 0;
+  background-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(to right, #603F8B, #EEAA7B);
+}
+/* Header Section */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #603F8B, #EEAA7B);
+  height: 70px;
+  width: 100%;
+  flex-wrap: wrap; /* Added to make it responsive */
+}
+
+header div.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header div.sub_media {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+header div.nav_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+header a.logo {
+  display: flex;
+  margin-right: 40px;
+  width: 200px;
+  height: 55px;
+}
+
+header a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-right: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.header-name {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+}
+
+header a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0; /* Added padding for smaller screens */
+  }
+
+  header div.sub_media {
+    padding: 0 20px;
+    width: 100%; /* Added to ensure full width on small screens */
+  }
+
+  header a.logo {
+    margin-right: 20px;
+  }
+
+  header a {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  header div.nav_wrapper {
+    flex-wrap: wrap;
+    justify-content: center; /* Added to center the menu items */
+  }
+
+  header a {
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    text-align: center;
+  }
+}
+
+/* Section part where search bar, image wallpaper, and info is present */
+section{
+  min-height: 300px;
+  height: calc(100vh / 2.5);
+  max-height: 400px;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  background: linear-gradient(to right, #603F8B, #EEAA7B);
+  }
+
+section.new_index_series {
+  background-image: url("https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/hPea3Qy5Gd6z4kJLUruBbwAH8Rm.jpg");
+}
+
+section.new_index {
+  max-height: 360px;
+  background-image: url('https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/hreiLoPysWG79TsyQgMzFKaOTF5.jpg');
+}
+
+section.new_index_movies {
+  background-image: url("https://image.tmdb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg");
+}
+
+section.inner_content {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+  }
+section.inner_content div.content_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  height:  100%;
+  background: linear-gradient(to right, #603f8b42, #eeab7b4f);
+  }
+
+section.inner_content div.title h2,
+section.inner_content div.title h3 {
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+}
+
+section.inner_content div.search-nav {
+  width: 100%;
+  max-width: auto;
+  height: auto;
+  margin-bottom: 20px; /* Added margin for better spacing on smaller screens */
+}
+
+section.inner_content div.search-nav input[type="text"] {
+  max-height: 50px;
+  font-size: 1.4em;
+  color: rgba(12, 12, 12, 0.5);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+section.inner_content div.search-nav button[type="submit"] {
+  height: 46px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    rgba(30, 213, 169, 1) 0%,
+    rgba(1, 180, 228, 1) 100%
+  );
+  border-radius: 30px;
+  position: absolute;
+  right: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  section.inner_content div.title h2,
+  section.inner_content div.title h3,
+  div.content_wrapper div.search-nav input[type="text"] {
+    font-size: 1.2em;
+    margin-left: 30px;
+  }
+
+  section.inner_content div.content_wrapper {
+    padding: 15px 20px;
+  }
+
+  section.inner_content div.search-nav input[type="text"] {
+    font-size: 1em;
+    padding: 10px 15px;
+  }
+
+  section.inner_content div.search-nav button[type="submit"] {
+    padding: 10px 20px;
+  }
+}

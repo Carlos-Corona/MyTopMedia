@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+
+
+/* Main where movies are present */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;;
+  box-sizing: border-box;
+  padding: 25px 5px;
+  background-size: cover;
+  background: linear-gradient(to right, #603F8B, #EEAA7B);
+}
+
+main div.media {
+  width: 100%;
+  max-width: 265px;
+  min-width: auto;
+  height: 585px;
+  margin: 20px 10px;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  transition: transform 0.3s;
+}
+
+main div.media:hover {
+  transform: scale(1.1);
+}
+
+main div.media img {
+  width: 100%;
+  height: auto;
+  max-height: 470px;
+  object-fit: cover;
+}
+
+main div.media div.media-info {
+    display: flex;
+    min-height: 65px;
+    max-height: 65px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.5rem 0.5rem;
+    letter-spacing: 1.2px;
+    font-size: 13px;
+}
+
+main div.media div.media-info span {
+  background-color: var(--secondary-color);
+  padding: 0.3rem 0.6rem;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+main div.media div.type-data {
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+  padding: 1rem 0.5rem 0.5rem;
+  letter-spacing: 1.5px;
+}
+
+main div.media div.overview {
+
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 25px;
+  letter-spacing: 1px;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.459);
+  backdrop-filter: blur(10px);
+  transform: translateY(120%);
+  transition: transform 0.3s ease-in;
+}
+
+main div.media:hover div.overview {
+  transform: translateY(-100%);
+}
+
+main div.media div.overview p {
+  font-size: 12.5px;
+}
+
+main div.edit {
+  position: absolute;
+  top: 0;  justify-content: center;
+  right: 0;
+  border: none;
+  width: 2vw;
+  height: 4vh;
+  cursor: pointer;
+  filter: brightness(20) invert(1) sepia(1) hue-rotate(180deg);
+}
+
+main div.edit:hover {
+  filter: brightness(100) invert(1) sepia(1) hue-rotate(180deg);
+}
+main div.media div.action-buttons {
+  padding: 0px 0px 0.5px;
+  width: 210px;
+  justify-content: center; 
+}
+
+
+main div.media img.play-icon {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  width: 10%;
+  transition: opacity 0.3s ease-in;
+  cursor: pointer;
+}
+
+main div.media:hover img.play-icon {
+  opacity: 1;
+}
+
+
+main div.media div.action-buttons div.action_inner button:hover {
+  background: linear-gradient(
+    to right,
+    rgb(20, 180, 143) 0%,
+    rgb(1, 150, 190) 100%
+  );
+}
+
+main div.media div.action-buttons button[type="submit"] {
+  height: 40px;
+  width: auto;
+  padding: 0 15px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    rgba(30, 213, 169, 1) 0%,
+    rgba(1, 180, 228, 1) 100%
+  );
+  border-radius: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+main div.media div.action-buttons div.action_inner {
+  display: flex;
+  transform: translate(5px, 0px);
+}
+main div.media div.action-buttons div.action_inner button.btnSaveto {
+  transform: translateX(45px);
+}
+
+main div.media div.action-buttons div.action_inner button.btnDelete {
+  transform: translateX(45px);
+}
+
+main div.media div.space-between {
+  height: 35px;
+  padding: 0 15px;
+  flex-direction: column;
+}
+
+main div.media div.media-info span.green {
+  color: lightgreen;
+}
+
+main div.media div.media-info span.orange {
+  color: orange;
+}
+
+main div.media div.media-info span.red {
+  color: orangered;
+}
