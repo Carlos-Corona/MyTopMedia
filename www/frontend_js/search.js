@@ -1,3 +1,4 @@
+const IP = "192.168.1.69";
 const API_KEY = "api_key=530e0261c942a040e464884807ad95d8";
 const BASE_URL = "https://api.themoviedb.org/3";
 const LANG = "&language=es-ES";
@@ -130,7 +131,7 @@ on(document, "click", ".btnSaveto", (e) => {
 
 
 function getMediaInfo(id_media, mediaType) {
-  const BackURL = "http://localhost:3000/api/media/";
+  const BackURL = "http://" + IP + ":3000/api/media/";
   let FULL_URL = "";
   mediaType === "Pelicula" ? "Pelicula" : "Serie";
   let params = {
