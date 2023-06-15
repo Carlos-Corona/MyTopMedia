@@ -1,4 +1,5 @@
-const API_URL = 'http://localhost:3000'
+const IP = "192.168.1.69";
+const API_URL = "http://" + IP + ":3000";
 const showID_URL = API_URL + '/api/show/last_id/';
 const API_URL_Media = 'http://localhost:3000/api/media/';
 const main = document.getElementById('main');
@@ -131,7 +132,7 @@ on(document, 'click', '.btnSave', e => {
 })
 
 function saveIDtoUpdate(data,id) {
-  const BackURL = 'http://localhost:3000/api/media/' + id;
+  const BackURL = "http://"+ IP +":3000/api/media/" + id;
   console.log(id);
   const asyncPostCall = async (data_json) => {
       try {
@@ -153,5 +154,6 @@ function saveIDtoUpdate(data,id) {
   }
 
   asyncPostCall(data);
-  window.open('http://localhost:5500/myMedia.html','_self');
+  const url = "http://"+ IP +":5500/myMedia.html"
+  window.open(url,'_self');
 }
