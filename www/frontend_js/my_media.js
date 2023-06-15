@@ -1,7 +1,8 @@
+const IP = "192.168.1.69"
 const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
-const urlLocal = "http://localhost:3000/api/media/";
+const urlLocal = "http://" + IP + ":3000/api/media/";
 
 getMyMediaDB(urlLocal);
 
@@ -108,7 +109,7 @@ on(document, "click", ".btnUpdate", (e) => {
 });
 
 function saveIDtoBack_Action(id, option) {
-  const BackURL = "http://localhost:3000/api/store/last_id/" + id;
+  const BackURL = "http://" + IP +":3000/api/store/last_id/" + id;
 
   const asyncPostCall = async () => {
     try {
@@ -138,7 +139,7 @@ function saveIDtoBack_Action(id, option) {
 }
 
 function deleteFuntionRestAPI(id) {
-  const BackURL = "http://localhost:3000/api/media/";
+  const BackURL = "http://" + IP + ":3000/api/media/";
   const FULL_URL = BackURL + id;
   console.log(FULL_URL);
   const asyncPostCall = async (FULL_URL) => {
